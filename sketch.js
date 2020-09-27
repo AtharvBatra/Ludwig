@@ -15,6 +15,7 @@ function draw() {
   background(0);  
 
     push();
+    translate(scAngle);
     rotate(scAngle);
     stroke(0, 0, 255);
     strokeWeight(7);
@@ -22,6 +23,7 @@ function draw() {
     pop();
 
     push();
+    translate(mnAngle)
     rotate(mnAngle);
     stroke(0, 255, 0);
     strokeWeight(7);
@@ -29,6 +31,7 @@ function draw() {
     pop();
 
     push();
+    translate(hrAngle)
     rotate(hrAngle);
     stroke(255, 0, 0);
     strokeWeight(7);
