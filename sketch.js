@@ -15,24 +15,24 @@ function draw() {
   background(0);  
 
     push();
-    translate(scAngle);
     rotate(scAngle);
+    translate(scAngle);
     stroke(0, 0, 255);
     strokeWeight(7);
     line(0, 0, 100, 0);
     pop();
 
     push();
-    translate(mnAngle)
     rotate(mnAngle);
+    translate(mnAngle)
     stroke(0, 255, 0);
     strokeWeight(7);
     line(0, 0, 70, 0);
     pop();
 
     push();
-    translate(hrAngle)
     rotate(hrAngle);
+    translate(hrAngle)
     stroke(255, 0, 0);
     strokeWeight(7);
     line(0, 0, 40, 0);
