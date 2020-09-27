@@ -6,17 +6,18 @@ function setup() {
   mn = minute();
   sc = second();
 
-  scAngle = map(sc, 0, 60, 360);
-  mnAngle = map(mn, 0, 60, 360);
-  hrAngle = map(hr, 0, 12, 360);
+  scAngle = map(sc, 0, 60, 0, 360);
+  mnAngle = map(mn, 0, 60, 0, 360);
+  hrAngle = map(hr, 0, 12, 0, 360);
 }
 
 function draw() {
   background(0);  
 
+    translate(400, 200);
+  
     push();
     rotate(scAngle);
-    translate(scAngle);
     stroke(0, 0, 255);
     strokeWeight(7);
     line(0, 0, 100, 0);
@@ -24,7 +25,6 @@ function draw() {
 
     push();
     rotate(mnAngle);
-    translate(mnAngle)
     stroke(0, 255, 0);
     strokeWeight(7);
     line(0, 0, 70, 0);
@@ -32,7 +32,6 @@ function draw() {
 
     push();
     rotate(hrAngle);
-    translate(hrAngle)
     stroke(255, 0, 0);
     strokeWeight(7);
     line(0, 0, 40, 0);
